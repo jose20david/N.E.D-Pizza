@@ -34,7 +34,7 @@ position:absolute;
 top:50%;
 left:50%;
 color:orange;
-transform: translateX(-950px)translateY(-490px);
+transform: translateX(-450px)translateY(-290px);
 }
 .menu a{
 display:inline-flex;
@@ -60,7 +60,7 @@ color:green;
 }
 #Servicios h4{
 text-align:center;
-color:blueviolet;
+color:black;
 font-family:"tahoma" sans-serif;
 }
 #Servicios .contenedor{
@@ -74,6 +74,8 @@ margin:16px;
 #Servicios img{
 width:100%;
 max-width:200px;
+border-radius:50%;
+border:15px solid #fff;
 }
 #Productos{
 background:#0c1650;
@@ -94,8 +96,115 @@ justify-content:center;
 width:100px;
 height:100px;
 border-radius:50%;
- border:15px solid #fff;
+border:15px solid #fff;
 
 }
+#servicios {
+	background:#b33008;
+	color:#fff;
+	text-align:center;
+	padding:30px;
+}
+#servicios h2{
+padding:15px;
+text-transform:uppercase;
+}
+#servicios .contenedor{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+#Guarderia{
+background:#06c4d7;
+color:#fff;
+text-align:center;
+padding:30px;
+}
+#Guarderia h2{
+padding:15px;
+text-transform:uppercase;
+}
+#Guarderia .contenedor{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+.guarderia-mascota img{
+width:100px;
+height:100px;
+border-radius:50%;
+border:15px solid #fff;
+}
+#Promociones{
+background:#ff0000;
+color:#fff;
+text-align:center;
+padding:30px;
+}
+#Promociones h2{
+padding:15px;
+text-transform:uppercase;
+}
+#Promociones .contenedor{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+.promocion-mascota img{
+width:100px;
+height:100px;
+border-radius:50%;
+border:15px solid #fff;
+}
 
+#ubicacion{
+	background:#fff;
+	color:greenyellow;
+	text-align:center;
+	padding: 70px;
+}
+#ubicacion h1{
+	font-size:25px;	
+	font-weight:bolt;
+	text-transform:uppercase;
+}
+#ubicacion .contenedor{
+	display:flex;
+	padding:35px;
+	flex-wrap:wrap;
+	justify-content:right;
+}
+#ubicacion .contenedor iframe{
+	width: 45%;
+	border:10px solid black;
+}
+#ubicacion .contenedor p{
+	padding:40px;
+	width: 50%;
+	text-align:left;
+}
 
+footer{
+	background:orange;
+}
+footer .contenedor{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding-bottom:30px;
+	color:#fff;
+}
+.copy{
+	font-size: 20px;
+	padding:20px;
+}
+
+.red-social{
+	width:100%;
+	text-align:center;
+	font-size:30px;
+}
+.red-social a{
+	color:#fff;
+	text-decoration:none;
+}
