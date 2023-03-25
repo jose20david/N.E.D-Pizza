@@ -3,64 +3,108 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+
 body{
 font-family: "poppins",sans-serif;
 }
+
 header{
 	width:100%;
 	height:50px;
-	background:green;
+	background:#120907;
 	color:#fff;
-	position:fixed;
-	top:0;
-	left:0;
 
+	position:fixed;
+	top:-5;
+	left:0;
+	z-index:100;
 }
 
 h1{
 float:left;
 }
-
-#banner{
-margin-top:50px;
-position:relative;
+header .contenedor{
+	display:table;
 }
 #banner{
-width:100%;
-height:100%;
+	margin-top:50px;
+	position:relative;
+}
+#banner img{
+	width:100%;
+	height:100%;
 }
 #banner .contenedor{
-position:absolute;
-top:50%;
-left:50%;
-color:orange;
-transform: translateX(-450px)translateY(-290px);
+	position:absolute;
+	top:50%;
+	left:50%;
+	color:rgba(212, 16, 16, 0.527);
+	transform: translateX(-450px)translateY(-290px);
+}
+#banner h2{
+	font-size:28px;
+}
+#banner a{
+	display:block;
+	width:100px;
+	color:rgba(212, 16, 16, 0.527);
+	text-decoration:none;
+	padding:7px;
+	margin-top:10px;
+	border:3px solid rgb(97,4,4);
+}
+#menu-bar{
+	display: none;
+}
+header label{
+	float:right;
+	font-size:28px;
+	margin:6px 0;
+	cursor:pointer;
+}
+.menu{
+	position:absolute;
+	top:50px;
+	left:0;
+
+	width:100%;
+	height: 100vh;
+	background:#2cc376;
+
+	transition: all .5s;
+	transform:translateX(-100%);
 }
 .menu a{
-display:inline-flex;
-color:#fff;
-height:50px;
-text-decoration:initial;
-padding:20px;
-border:0px solid #fff;
+	display:block;
+	color:#fff;
+	height:50px;
+	text-decoration:none;
+	padding:15px;
+	border:1px solid #fff;
 }
 .menu a:hover{
-background:blue;
+	background:rgb(255,255,255,.5);
 } 
+#menu-bar:checked ~.menu{
+	transform:translateX(0%);
+}
 #Bienvenidos h2{
 padding:15px;
 text-transform: uppercase;
 }
+#Bienvenidos.contenedor{
+	background: #dffdff;
+}
 #Servicios{
-padding: 50px;
+padding: 60px;
 }
 #Servicios h3{
 text-align:center;
-color:green;
+color:#fff;
 }
 #Servicios h4{
 text-align:center;
-color:black;
+color:#fff;
 font-family:"tahoma" sans-serif;
 }
 #Servicios .contenedor{
@@ -72,13 +116,13 @@ flex:wrap;
 margin:16px;
 }
 #Servicios img{
-width:100%;
+width:200%;
 max-width:200px;
 border-radius:50%;
 border:15px solid #fff;
 }
 #Productos{
-background:#0c1650;
+background:#145c84;
 color:#fff;
 text-align:center;
 padding:30px;
@@ -93,14 +137,13 @@ flex-wrap:wrap;
 justify-content:center;
 }
 .info-mascota img{
-width:100px;
-height:100px;
+width:200px;
+height:200px;
 border-radius:50%;
 border:15px solid #fff;
-
 }
 #servicios {
-	background:#b33008;
+	background:#12263b;
 	color:#fff;
 	text-align:center;
 	padding:30px;
@@ -130,13 +173,13 @@ flex-wrap:wrap;
 justify-content:center;
 }
 .guarderia-mascota img{
-width:100px;
-height:100px;
+width:200px;
+height:200px;
 border-radius:50%;
 border:15px solid #fff;
 }
 #Promociones{
-background:#ff0000;
+background:#209cd8;
 color:#fff;
 text-align:center;
 padding:30px;
@@ -151,15 +194,15 @@ flex-wrap:wrap;
 justify-content:center;
 }
 .promocion-mascota img{
-width:100px;
-height:100px;
+width:200px;
+height:200px;
 border-radius:50%;
 border:15px solid #fff;
 }
 
 #ubicacion{
-	background:#fff;
-	color:greenyellow;
+	background:#20d9d8;
+	color:white;
 	text-align:center;
 	padding: 70px;
 }
@@ -183,16 +226,15 @@ border:15px solid #fff;
 	width: 50%;
 	text-align:left;
 }
-
 footer{
-	background:orange;
+	background:#12263b;
 }
 footer .contenedor{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
 	padding-bottom:30px;
-	color:#fff;
+	color: #fff;
 }
 .copy{
 	font-size: 20px;
@@ -205,6 +247,6 @@ footer .contenedor{
 	font-size:30px;
 }
 .red-social a{
-	color:#fff;
+	color:#209cd8;
 	text-decoration:none;
 }
